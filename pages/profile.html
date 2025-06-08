@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--FONTS&ICONS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jura:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search&icon_names=settings" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="https://kit.fontawesome.com/3a0cb60883.js"
+            crossorigin="anonymous"></script>
+        <!--TITLE&CSS-->
+        <link href="style.css" rel="stylesheet">
+        <script src="index.js"></script>
+        <link rel="icon" href="/assets/favicon1.png">
+        <title>Pixel Place | Profile</title>
+    </head>
+    <body id="ProfilePage">
+        <header>
+            <h1>PixelPlace</h1>
+            <div class="head">
+                <form action="#">
+                    <div class="search">
+                        <input type="search" class="srch_input"
+                            placeholder="Search">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </form>
+                <a href="#">Messages</a>
+                <a href="#">Friends</a>
+                <div class="stngs">
+                    <div class="settings-wrapper">
+                        <!-- Invisible checkbox -->
+                        <input type="checkbox" id="settings-toggle" hidden>
+                        <label for="settings-toggle" class="settings-icon">
+                            <span
+                                class="material-symbols-outlined">settings</span>
+                        </label>
+                        <div class="settings-menu">
+                            <a href="#">Account Settings</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="ProfileContainer">
+                <aside class="sidebar_left">
+                    <a href="home.html">News Feed</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Themes & Customisation</a>
+                    <a href="#">Your Pets</a>
+                </aside>
+                <main class="ProfileDetails">
+                    <div class="details">
+                        <img class="PP" title="Profile Picture" alt="prof pic"
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI5IiwiU29ja3MiOiIxIiwiUGFudHMiOiIxNCIsIkdsb3ZlcyI6IjIiLCJUb3AiOiIyIiwiRXllcyI6IjEwIiwiTW91dGgiOiIyMCIsIkhhaXJUb3AiOiI1IiwiaGFpclRvbmUiOiJjOTcyYWMiLCJoYWlyVG9uZTIiOiIzZjFhODYiLCJleWVzVG9uZSI6ImZhM2RlNiIsImV5ZXNUb25lMiI6IjU5NTkwOSIsInBhbnRzVG9uZSI6ImQwYTNkMSIsInBhbnRzVG9uZTIiOiJmYzZhZGEiLCJ0b3BUb25lIjoiYWRhYzE2IiwidG9wVG9uZTIiOiJhNzAyODMiLCJzaG9lc1RvbmUiOiIxOTE2MmIiLCJzaG9lc1RvbmUyIjoiYzliOWFiIiwic29ja3NUb25lIjoiYTlmNjY2IiwiZ2xvdmVzVG9uZSI6IjQ5NzBiMiIsImdsb3Zlc1RvbmUyIjoiNGFmN2NkIn0=/1/show.png">
+                        <h1>PixelPup</h1>
+                        <div class="mood">
+                            <h1>Mood: <span>Energetic</span>✨</h1>
+                        </div>
+                        <div class="ProfileBar">
+                            <a href="#">Photos</a>
+                            <a href="#">Videos</a>
+                            <a href="#">Blogs</a>
+                            <a href="#">Customize</a>
+                        </div>
+                    </div>
+
+                    <!--WE THEN SPLIT THE MAIN TO 2 COLUMNS OR 3 -->
+                    <div class="musc_plyr">
+                        <h3>Playlist</h3>
+                        <div class="music">
+                            <div class="left">
+                                <button id="playPauseBtn"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+
+                            <div class="center">
+                                <div class="info">
+                                    <strong>Song Title</strong>
+                                    <p>Artist</p>
+                                </div>
+                                <input type="range" id="progress" value="0"
+                                    min="0">
+                            </div>
+
+                            <div class="right">
+                                <span id="time">0:00 / 0:00</span>
+                            </div>
+
+                            <audio id="audio">
+                                <source src="#"
+                                    type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="About">
+                        <h2>About Me</h2>
+                        <p>Name: PixelPup</p>
+                        <p>Location: Webville</p>
+                        <p>Hobbies: Drawing pixels, raising pets, customizing
+                            themes!</p>
+                    </div>
+                    <div class="pets"> <!--ADD MORE PETS-->
+                        <h3>your pets:</h3>
+                        <img class="PetImg"
+                            src="https://i.postimg.cc/j2YwQcMx/avatar.png">
+                    </div>
+                    <div class="gif">
+                        <img src="/assets/orangeheart.gif" alt="orange heart">
+                    </div>
+                    <div class="RecentBlogs">
+                        <h2>Recent Blog Entries:</h2>
+                        <div class="blog">
+                            <h3>Saturday,June 7,2025</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Repellendus nostrum iusto,
+                                sapiente explicabo harum id, laboriosam
+                                error eligendi ducimus iure et dolores
+                                libero, exercitationem modi perferendis.
+                                Nihil voluptate provident ea.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="TopFriends">
+                        <h2>your top friends:</h2>
+                        <!--img placeholder & add 5 more -->
+                        <img class="friend"
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMiIsIkJvZHkiOiIxIiwiU29ja3MiOiIyIiwiU2hvZXMiOiIyIiwiUGFudHMiOiIxNiIsIkdsb3ZlcyI6IjIiLCJUb3AiOiIzIiwiRXllYnJvd3MiOiIxIiwiRXllcyI6IjgiLCJNb3V0aCI6IjE4IiwiSGFpclRvcCI6IjUiLCJoYWlyVG9uZSI6IjA4MDJjMyIsImhhaXJUb25lMiI6IjFlNTg1MCIsImV5ZXNUb25lIjoiYjQzZjA4IiwiZXllc1RvbmUyIjoiZDA3ODlkIiwicGFudHNUb25lIjoiYjg4MGU0IiwicGFudHNUb25lMiI6IjI3MTg2OCIsInRvcFRvbmUiOiJhY2E5NzMiLCJ0b3BUb25lMiI6IjlmNzY0MSIsInNob2VzVG9uZSI6IjBlNjE0NiIsInNob2VzVG9uZTIiOiI5MWMyMDYiLCJzb2Nrc1RvbmUiOiJlYmRmMWEiLCJnbG92ZXNUb25lIjoiNzY1N2ZlIiwiZ2xvdmVzVG9uZTIiOiIzNTE3NDcifQ==/1/show.png">
+                    </div>
+                </main>
+            </div>
+
+        </body>
+    </html>

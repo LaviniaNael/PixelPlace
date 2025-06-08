@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--META-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--FONTS&ICONS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jura:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search&icon_names=settings" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="https://kit.fontawesome.com/3a0cb60883.js"
+            crossorigin="anonymous"></script>
+        <!--TITLE&CSS-->
+        <link href="style.css" rel="stylesheet">
+        <script src="index.js"></script>
+        <link rel="icon" href="/assets/favicon1.png">
+        <title>Pixel Place | Home</title>
+    </head>
+    <body id="homepage">
+        <header>
+            <h1>PixelPlace</h1>
+            <div class="head">
+                <form action="#">
+                    <div class="search">
+                        <input type="search" class="srch_input"
+                            placeholder="Search">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </form>
+                <a href="#">Messages</a>
+                <a href="#">Friends</a>
+                <div class="stngs">
+                    <div class="settings-wrapper">
+                        <!-- Invisible checkbox -->
+                        <input type="checkbox" id="settings-toggle" hidden>
+                        <label for="settings-toggle" class="settings-icon">
+                            <span
+                                class="material-symbols-outlined">settings</span>
+                        </label>
+                        <div class="settings-menu">
+                            <a href="#">Account Settings</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="ContainerHome">
+
+                <!--LEFT SIDEBAR-->
+                <aside class="sidebar_left">
+                    <a href="home.html">News Feed</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Themes & Customisation</a>
+                    <a href="#">Your Pets</a>
+                </aside>
+
+                <!--NEWS FEED BOX-->
+                <main class="feed">
+
+                    <!-- POST -->
+                    <div class="post">
+                        <div class="user-info">
+                            <img
+                                src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMyIsIkJvZHkiOiIxIiwiU29ja3MiOiI0IiwiU2hvZXMiOiIzIiwiUGFudHMiOiIxOSIsIkdsb3ZlcyI6IjEiLCJUb3AiOiIxMCIsIkV5ZWJyb3dzIjoiMSIsIkV5ZXMiOiIzIiwiTW91dGgiOiIxMSIsIkhhaXJUb3AiOiI0IiwiaGFpclRvbmUiOiIwNTg0YjgiLCJoYWlyVG9uZTIiOiIyOWE1OGMiLCJleWVzVG9uZSI6IjQzMmM2MSIsImV5ZXNUb25lMiI6IjcyMmIzMSIsInBhbnRzVG9uZSI6ImZlMGU0MSIsInBhbnRzVG9uZTIiOiI3NDdhMGYiLCJ0b3BUb25lIjoiNmVjZWU0IiwidG9wVG9uZTIiOiIzYzdlMzkiLCJzaG9lc1RvbmUiOiJjMmM0M2IiLCJzaG9lc1RvbmUyIjoiZGE3ZmY5Iiwic29ja3NUb25lIjoiOWIwZDRmIiwiZ2xvdmVzVG9uZSI6Ijk4OGIxMSIsImdsb3Zlc1RvbmUyIjoiODk5ZTc3In0=/1/show.png"
+                                alt="avatar">
+                            <span class="username">scenequeen <span
+                                    class="heart">❤</span></span>
+                            <span class="timestamp">2 hours ago</span>
+                        </div>
+                        <p class="message">Rawr xD</p>
+                        <img class="post-image"
+                            src="https://i.postimg.cc/SKzxT82J/butterfly.gif"
+                            alt="image" />
+                        <p class="mood">mood: sleepy <span
+                                class="emoji">😪</span></p>
+                        <div class="interactions">
+                            <a href="#" class="comment-btn">Comment</a>
+                            <a href="#" class="like-btn">Like</a>
+                            <img src="/assets/heart.jpg" alt="heart"
+                                class="heart-toggle" />
+                        </div>
+                        <div class="comment-section" style="display: none;">
+                            <input type="text" class="comment-input"
+                                placeholder="Write a comment..." />
+                            <a class="comment-submit">Post</a>
+                            <div class="comment-list"></div>
+                        </div>
+                    </div>
+
+                    <!--Another post-->
+                    <div class="post">
+                        <div class="user-info">
+                            <img
+                                src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMiIsIkJvZHkiOiIxIiwiU29ja3MiOiIyIiwiU2hvZXMiOiIyIiwiUGFudHMiOiIxNiIsIkdsb3ZlcyI6IjIiLCJUb3AiOiIzIiwiRXllYnJvd3MiOiIxIiwiRXllcyI6IjgiLCJNb3V0aCI6IjE4IiwiSGFpclRvcCI6IjUiLCJoYWlyVG9uZSI6IjA4MDJjMyIsImhhaXJUb25lMiI6IjFlNTg1MCIsImV5ZXNUb25lIjoiYjQzZjA4IiwiZXllc1RvbmUyIjoiZDA3ODlkIiwicGFudHNUb25lIjoiYjg4MGU0IiwicGFudHNUb25lMiI6IjI3MTg2OCIsInRvcFRvbmUiOiJhY2E5NzMiLCJ0b3BUb25lMiI6IjlmNzY0MSIsInNob2VzVG9uZSI6IjBlNjE0NiIsInNob2VzVG9uZTIiOiI5MWMyMDYiLCJzb2Nrc1RvbmUiOiJlYmRmMWEiLCJnbG92ZXNUb25lIjoiNzY1N2ZlIiwiZ2xvdmVzVG9uZTIiOiIzNTE3NDcifQ==/1/show.png"
+                                alt="avatar">
+                            <span class="username">needfulshampoo</span>
+                            <span class="timestamp">18 hours ago</span>
+                        </div>
+                        <p class="message">
+                            <span>My car is a piece of garbage ughh</span>
+                        </p>
+                        <div class="interactions">
+                            <a href="#" class="comment-btn">Comment</a>
+                            <a href="#" class="like-btn">Like</a>
+                            <img src="/assets/heart.jpg" alt="heart"
+                                class="heart-toggle" />
+                        </div>
+                        <div class="comment-section" style="display: none;">
+                            <input type="text" class="comment-input"
+                                placeholder="Write a comment..." />
+                            <a class="comment-submit">Post</a>
+                            <div class="comment-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Another post -->
+                    <div class="post">
+                        <div class="user-info">
+                            <img
+                                src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMyIsIlNvY2tzIjoiMiIsIlNob2VzIjoiMyIsIlBhbnRzIjoiMTQiLCJHbG92ZXMiOiIxIiwiVG9wIjoiNyIsIkV5ZXMiOiI1IiwiTW91dGgiOiIyIiwiSGFpclRvcCI6IjMiLCJoYWlyVG9uZSI6ImQ4NzljZCIsImhhaXJUb25lMiI6IjZkZDEwMyIsImV5ZXNUb25lIjoiNzUzZTU2IiwiZXllc1RvbmUyIjoiMThmNmFjIiwicGFudHNUb25lIjoiOGFjMTliIiwicGFudHNUb25lMiI6Ijg2Y2RhMSIsInRvcFRvbmUiOiIyNmM2NjIiLCJ0b3BUb25lMiI6IjhmZWIzMiIsInNob2VzVG9uZSI6IjE3Zjk1YiIsInNob2VzVG9uZTIiOiI3MjcxMjUiLCJzb2Nrc1RvbmUiOiIwNzQ1ZTciLCJnbG92ZXNUb25lIjoiOGY4YWYzIiwiZ2xvdmVzVG9uZTIiOiIzNzRlNWYifQ==/1/show.png"
+                                alt="avatar">
+                            <span class="username">~starryskies~</span>
+                            <span class="timestamp">4 hours ago</span>
+                        </div>
+                        <p class="message">
+                            <span>my favorite band</span>
+                            <span>who else likes their music?🤔</span>
+                        </p>
+                        <img class="post-image"
+                            src="https://i.postimg.cc/bY12NXvs/band.jpg"
+                            alt="band" />
+                        <div class="interactions">
+                            <a href="#" class="comment-btn">Comment</a>
+                            <a href="#" class="like-btn">Like</a>
+                            <img src="/assets/heart.jpg" alt="heart"
+                                class="heart-toggle" />
+                        </div>
+                        <div class="comment-section" style="display: none;">
+                            <input type="text" class="comment-input"
+                                placeholder="Write a comment..." />
+                            <a class="comment-submit">Post</a>
+                            <div class="comment-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Another post -->
+                    <div class="post">
+                        <div class="user-info">
+                            <img
+                                src="http://www.avatarsinpixels.com/chibi/eyJCb2R5IjoiMyIsIlNvY2tzIjoiMSIsIlNob2VzIjoiNCIsIlBhbnRzIjoiMTUiLCJUb3AiOiIxMiIsIkV5ZXMiOiI0IiwiTW91dGgiOiI3IiwiSGFpclRvcCI6IjIiLCJoYWlyVG9uZSI6IjQ3MWNiYiIsImhhaXJUb25lMiI6Ijg4MjE3YSIsImV5ZXNUb25lIjoiMTdhMmNiIiwiZXllc1RvbmUyIjoiMGZkZWFlIiwicGFudHNUb25lIjoiNGM2MWE2IiwicGFudHNUb25lMiI6IjAzNzE2ZCIsInRvcFRvbmUiOiIwNDExM2QiLCJ0b3BUb25lMiI6ImM4NzJhMiIsInNob2VzVG9uZSI6IjUwOWU2OSIsInNob2VzVG9uZTIiOiJjNjgyNzkiLCJzb2Nrc1RvbmUiOiI3ODM2ZmUiLCJnbG92ZXNUb25lIjoiYmVmNzI3IiwiZ2xvdmVzVG9uZTIiOiI1YWJiMDkifQ==/1/show.png"
+                                alt="avatar">
+                            <span class="username">moonjazz</span>
+                            <span class="timestamp">5 hours ago</span>
+                        </div>
+                        <p class="message">
+                            <span>Just got a new pet!</span>
+                            <span>isn't she beautiful?♡</span>
+                        </p>
+                        <img class="post-image"
+                            src="https://i.postimg.cc/j2YwQcMx/avatar.png"
+                            alt="pony" />
+                        <div class="interactions">
+                            <a href="#" class="comment-btn">Comment</a>
+                            <a href="#" class="like-btn">Like</a>
+                            <img src="/assets/heart.jpg" alt="heart"
+                                class="heart-toggle" />
+                        </div>
+                        <div class="comment-section" style="display: none;">
+                            <input type="text" class="comment-input"
+                                placeholder="Write a comment..." />
+                            <a class="comment-submit">Post</a>
+                            <div class="comment-list"></div>
+                        </div>
+                    </div>
+                </main>
+
+                <!--RIGHT SIDEBAR-->
+                <aside class="sidebar_right">
+                    <div class="req">
+                        <h3>Requests</h3>
+                        <a href="#">View All</a>
+                        <div class="add_reqs">
+                            <div class="user_req">
+                                <img
+                                    src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI5IiwiU29ja3MiOiIxIiwiUGFudHMiOiIxNCIsIkdsb3ZlcyI6IjIiLCJUb3AiOiIyIiwiRXllcyI6IjEwIiwiTW91dGgiOiIyMCIsIkhhaXJUb3AiOiI1IiwiaGFpclRvbmUiOiJjOTcyYWMiLCJoYWlyVG9uZTIiOiIzZjFhODYiLCJleWVzVG9uZSI6ImZhM2RlNiIsImV5ZXNUb25lMiI6IjU5NTkwOSIsInBhbnRzVG9uZSI6ImQwYTNkMSIsInBhbnRzVG9uZTIiOiJmYzZhZGEiLCJ0b3BUb25lIjoiYWRhYzE2IiwidG9wVG9uZTIiOiJhNzAyODMiLCJzaG9lc1RvbmUiOiIxOTE2MmIiLCJzaG9lc1RvbmUyIjoiYzliOWFiIiwic29ja3NUb25lIjoiYTlmNjY2IiwiZ2xvdmVzVG9uZSI6IjQ5NzBiMiIsImdsb3Zlc1RvbmUyIjoiNGFmN2NkIn0=/1/show.png"
+                                    alt="avatar">
+                                <span class="username">beepconference</span>
+                                <span><a class="add"> Accept</a></span>
+                            </div>
+                            <div class="user_req">
+                                <img
+                                    src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI5IiwiQm9keSI6IjEiLCJTb2NrcyI6IjEiLCJTaG9lcyI6IjIiLCJQYW50cyI6IjUiLCJUb3AiOiIxMSIsIkV5ZXMiOiIyIiwiTW91dGgiOiIyMSIsIkhhaXJUb3AiOiIzIiwiaGFpclRvbmUiOiIwZjFhNTQiLCJoYWlyVG9uZTIiOiI2MDgxODUiLCJleWVzVG9uZSI6ImVlZDViNCIsImV5ZXNUb25lMiI6IjgwZGZiMyIsInBhbnRzVG9uZSI6IjcxMWQ3ZSIsInBhbnRzVG9uZTIiOiJkNTMzZWEiLCJ0b3BUb25lIjoiNzkxNTE2IiwidG9wVG9uZTIiOiI5NTIzNGUiLCJzaG9lc1RvbmUiOiIwNjgyMTgiLCJzaG9lc1RvbmUyIjoiNDkwYzFkIiwic29ja3NUb25lIjoiMmUzMzY1IiwiZ2xvdmVzVG9uZSI6IjAwNzg0NSIsImdsb3Zlc1RvbmUyIjoiOTdmZjdlIn0=/1/show.png"
+                                    alt="avatar">
+                                <span class="username">excitedlove</span>
+                                <span><a class="add"> Accept</a></span>
+                            </div>
+                            <div class="user_req">
+                                <img
+                                    src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI4IiwiU29ja3MiOiIxIiwiUGFudHMiOiIxNyIsIkdsb3ZlcyI6IjEiLCJUb3AiOiI3IiwiRXllcyI6IjIiLCJNb3V0aCI6IjUiLCJIYWlyVG9wIjoiNCIsImhhaXJUb25lIjoiMDMxMzMwIiwiaGFpclRvbmUyIjoiMjI4OTgyIiwiZXllc1RvbmUiOiIwMWJlZDQiLCJleWVzVG9uZTIiOiIyOTJiYzEiLCJwYW50c1RvbmUiOiJlNWI4YTkiLCJwYW50c1RvbmUyIjoiZTVmYWYyIiwidG9wVG9uZSI6ImUwNDljZiIsInRvcFRvbmUyIjoiNTUyNjNhIiwic2hvZXNUb25lIjoiMGZlYzk4Iiwic2hvZXNUb25lMiI6IjE2Y2I4MyIsInNvY2tzVG9uZSI6IjJmNjM4NCIsImdsb3Zlc1RvbmUiOiI4ZmU5YjIiLCJnbG92ZXNUb25lMiI6IjRkZTA5NiJ9/1/show.png"
+                                    alt="avatar">
+                                <span class="username">sorryhinder</span>
+                                <span><a class="add"> Accept</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sugg">
+                        <h3>Ppl you may know</h3>
+                        <div class="may_know">
+                            <div class="user_may_know">
+                                <img
+                                    src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI0IiwiQm9keSI6IjEiLCJTb2NrcyI6IjIiLCJQYW50cyI6IjEyIiwiR2xvdmVzIjoiMiIsIlRvcCI6IjMiLCJFeWVzIjoiOSIsIk1vdXRoIjoiMTgiLCJIYWlyVG9wIjoiMiIsImhhaXJUb25lIjoiNjI4OTljIiwiaGFpclRvbmUyIjoiNDc4MjhmIiwiZXllc1RvbmUiOiJjMTc5YmEiLCJleWVzVG9uZTIiOiIwMDdhMjciLCJwYW50c1RvbmUiOiI0NGUxOTAiLCJwYW50c1RvbmUyIjoiNzcyZDUzIiwidG9wVG9uZSI6ImY2MzcxNSIsInRvcFRvbmUyIjoiNDkyMTg5Iiwic2hvZXNUb25lIjoiZmYyNTMyIiwic2hvZXNUb25lMiI6ImI3YTdiNyIsInNvY2tzVG9uZSI6IjFiY2FiZiIsImdsb3Zlc1RvbmUiOiIyZDAwMTkiLCJnbG92ZXNUb25lMiI6IjA0NDk0MyJ9/1/show.png"
+                                    alt="avatar">
+                                <span class="username">shamefulwait</span>
+                                <span><a class="add_new">Add</a></span>
+                            </div>
+                            <div class="user_may_know">
+                                <img
+                                    src="http://www.avatarsinpixels.com/chibi/eyJCb2R5IjoiMiIsIlNvY2tzIjoiMyIsIlNob2VzIjoiMyIsIlBhbnRzIjoiNiIsIkdsb3ZlcyI6IjEiLCJUb3AiOiIyIiwiRXllYnJvd3MiOiIxIiwiRXllcyI6IjgiLCJNb3V0aCI6IjkiLCJIYWlyVG9wIjoiMyIsImhhaXJUb25lIjoiYTE4NjYyIiwiaGFpclRvbmUyIjoiMzNhYjJhIiwiZXllc1RvbmUiOiI2ZGNkMWMiLCJleWVzVG9uZTIiOiJiMGRhMDQiLCJwYW50c1RvbmUiOiJkY2QxOTIiLCJwYW50c1RvbmUyIjoiZTI3NGNhIiwidG9wVG9uZSI6IjIwZDNiYyIsInRvcFRvbmUyIjoiYjIyMzJiIiwic2hvZXNUb25lIjoiNGVkOTg2Iiwic2hvZXNUb25lMiI6ImM3NzY1MSIsInNvY2tzVG9uZSI6ImJmNDY5YiIsImdsb3Zlc1RvbmUiOiI1ZDE5MzYiLCJnbG92ZXNUb25lMiI6ImJiMjM3ZCJ9/1/show.png"
+                                    alt="avatar">
+                                <span class="username">playfuladd</span>
+                                <span><a class="add_new"> Add</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spon">
+                        <h3>Sponsored</h3>
+                        <div class="sponsor-box">
+                            <img src="https://i.postimg.cc/DygJLqLh/can.jpg"
+                                alt="sponsor ad">
+                            <div class="sponsor-text">
+                                <p><strong>PixelSoda™</strong></p>
+                                <p>Drink in style — Now with 8-bit flavor!</p>
+                                <a href="#">Try it now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musc_plyr">
+                        <h3>Playlist</h3>
+                        <div class="music">
+                            <div class="left">
+                                <button id="playPauseBtn"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+
+                            <div class="center">
+                                <div class="info">
+                                    <strong>Song Title</strong>
+                                    <p>Artist</p>
+                                </div>
+                                <input type="range" id="progress" value="0"
+                                    min="0">
+                            </div>
+
+                            <div class="right">
+                                <span id="time">0:00 / 0:00</span>
+                            </div>
+
+                            <audio id="audio">
+                                <source src="#"
+                                    type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </body>
+    </html>
