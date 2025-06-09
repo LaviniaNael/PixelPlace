@@ -11,6 +11,18 @@
     --font2_pixel: "Pixelify Sans", sans-serif;
     --font3_pixel: "Jersey 10", sans-serif;
     --white_text: aliceblue;
+    /*DEFAULT COLOR */
+    --color-Name-1: rgb(54, 54, 54);
+    --color-grad2: rgb(20, 20, 20);
+    --color-grad3: rgb(184, 184, 184);
+    --color-bg4: rgba(110, 110, 110, 0.63);
+    --color-border5: rgb(105, 105, 105);
+    --color-barBtn6: rgb(66, 66, 66);
+    --color-gifBG7: rgba(107, 107, 107, 0.644);
+    --color-topfreds8: rgba(131, 131, 131, 0.5);
+    --color-abtMeBG9: rgba(37, 37, 37, 0.5);
+    --color-pets10: rgba(131, 131, 131, 0.8);
+    --color-blogs11: rgba(212, 212, 212, 0.8);
 }
 
 #introPage {
@@ -18,7 +30,9 @@
     image-rendering: optimizeQuality;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
+    background-attachment: fixed;
+
 }
 
 .intro {
@@ -84,7 +98,7 @@
 
 .dog-helper {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 0px;
     text-align: center;
 }
@@ -98,7 +112,8 @@
     font-family: var(--font2_pixel);
     font-size: 12px;
     border: 2px solid black;
-    padding: 8px;
+    border-radius: 100px 50px 40px 10px;
+    padding: 10px 20px;
     white-space: nowrap;
     visibility: hidden;
     transform: translateX(50%);
@@ -112,8 +127,11 @@
 /*SIGN UP PAGE */
 #signup_page {
     font-family: var(--font2_pixel);
-    background: url(https://i.postimg.cc/3NLhJJ4s/BG.png);
+    width: 100%;
+    height: auto;
     background-size: cover;
+    background: linear-gradient(to bottom, #422fad 0%, #090a0f 100%);
+    background-attachment: fixed;
 
     .signupform {
         width: 400px;
@@ -122,19 +140,32 @@
         margin: 30px auto;
         border-radius: 20px;
         color: black;
-        box-shadow: 0 5px 50px rgb(14, 1, 1);
-        background-color: #162a9c8f;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     }
 
     .login {
-        margin: 0 0 10px 115px;
-        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        margin-left: 32%;
         background-color: var(--white_text);
         border-radius: 20px;
-        text-align: center;
         width: 40%;
         transition: all 400ms 100ms;
         cursor: pointer;
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 400ms 100ms;
+            padding: 15px;
+
+        }
+
     }
 
     .login:hover {
@@ -146,18 +177,11 @@
         }
     }
 
-    .login a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 15px;
-        transition: all 400ms 100ms;
-
-    }
-
     .signupform form {
         display: flex;
         flex-direction: column;
+        align-items: center;
+
     }
 
     .signupform h2 {
@@ -211,8 +235,28 @@
     .signupform input[type="submit"]:hover {
         background-color: rgba(94, 86, 204, 0.527);
         color: var(--white_text);
-        /*border: 1px solid white;*/
         box-shadow: 0 5px 20px rgba(22, 4, 37, 0.664);
+    }
+
+    input[type="radio"] {
+        appearance: none;
+        width: 14px;
+        height: 14px;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked::before {
+        content: '';
+        position: absolute;
+        top: 0.5px;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        background: #774cee;
+        border-radius: 50%;
     }
 
     /* LOG IN POP UP*/
@@ -231,19 +275,21 @@
 
     /* Modal content box */
     .modal-content {
-        background-color: #212994;
         padding: 20px;
         border-radius: 12px;
         width: 400px;
         height: 350px;
         color: var(--white_text);
-        box-shadow: 0 5px 15px #000;
         text-align: center;
         position: relative;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 
         .rememberme {
             color: var(--white_text);
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .rememberme a {
@@ -256,6 +302,7 @@
 
     .modal-content form {
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -349,6 +396,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 #homepage .search,
@@ -398,11 +451,6 @@
     #settings-toggle:checked~.settings-menu {
         display: block;
     }
-}
-
-form {
-    display: flex;
-    align-items: center;
 }
 
 .search {
@@ -812,7 +860,6 @@ form {
 
     .post-image:hover {
         transform: scale(1.5) translate(40%, -10%);
-        /*box-shadow: 0 5px 25px rgb(47, 19, 66);*/
         background-color: #e4d5ff;
     }
 
@@ -871,11 +918,11 @@ a {
     width: 100%;
     text-transform: capitalize;
     color: var(--white_text);
-    background: rgba(250, 177, 135, 0.5);
-    border: 2px solid #f5bea4;
-    /*border: 2px solid #c3a4f5;*/
-    /*background: rgba(255, 192, 247, 0.5);*/
-    
+    background: var(--color-bg4);
+    /*CHANGING*/
+    border: 2px solid var(--color-border5);
+    /*CHANGING*/
+
     text-shadow:
         -1px 0px 0 black,
         1px 0px 0 black,
@@ -933,12 +980,12 @@ a {
             padding-left: 5px;
             border-left: 2px solid white;
             text-shadow: none;
-            
+
         }
 
         span {
-            /*background: linear-gradient(to right, rgb(241, 164, 241), rgb(216, 58, 255));*/
-            background: linear-gradient(to right, rgb(168, 48, 0), rgb(255, 81, 0));
+            background: linear-gradient(to right, var(--color-grad2), var(--color-grad3));
+            /*CHANGING*/
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             -webkit-text-stroke: 0.5px white;
@@ -953,8 +1000,8 @@ a {
     }
 
     h1 {
-        /*color: #b63acf;*/
-        color: rgb(236, 104, 56);
+        color: var(--color-Name-1);
+        /*CHANGING*/
         text-shadow:
             -1px -1px 0 white,
             1px -1px 0 white,
@@ -968,27 +1015,68 @@ a {
 .ProfileBar {
     margin: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 
-    a {
-        padding: 5px 10px;
-        /*color: black;
-        border: 4px double black;*/
+    .bar,
+    #customize-btn {
+        padding: 6px 14px;
         color: white;
-        border: 4px double white;
-        background: rgba(238, 93, 41, 0.582);
+        border: 3px double white;
+        background: var(--color-barBtn6);
+        /*CHANGING*/
         font-weight: 500;
         text-shadow: none;
-        
+        font-family: var(--font2_pixel);
+        cursor: pointer;
+        transition: background 300ms;
+        border-radius: 5px;
+    }
+
+    .bar:hover,
+    #customize-btn:hover {
+        background: var(--color-grad3);
+        color: black;
     }
 }
 
+.customize-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+
+    #color-options {
+        display: flex;
+        gap: 6px;
+        margin-left: 8px;
+        align-items: center;
+    }
+}
+
+.color-swatch,
+.gif .color-swatch2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-swatch:hover,
+.color-swatch2:hover {
+    transform: scale(1.15);
+}
+
 .pets {
-    flex: 0 0 300px;
+    flex: 0 0 350px;
     height: 150px;
     border: 1px solid white;
     border-radius: 15px;
-    background: url(/assets/download.jpg);
-    background-size: auto;
+    background: var(--color-pets10);
     padding: 10px;
     text-align: center;
     color: black;
@@ -998,35 +1086,66 @@ a {
         width: 100px;
     }
 }
-.gif{
+
+.gif {
     flex: 0 0 150px;
     height: 150px;
     border: 1px solid white;
     border-radius: 15px;
-    background-color: rgba(255, 68, 0, 0.24);
-    img{
+    background-color: var(--color-gifBG7);
+    /*CHANGING*/
+    position: relative;
+
+    img {
         width: 150px;
+    }
+
+    #color-options2 {
+        position: absolute;
+        top: 0px;
+        right: -30px;
+        display: none;
+        flex-direction: column;
+        padding: 6px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    #color-button:hover #color-options2 {
+        display: flex;
+        transition: all 500ms ease;
     }
 }
 
+#color-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
 .TopFriends {
-    flex: 1 1 300px;
+    flex: 1 1 200px;
     border-radius: 15px;
     height: auto;
     padding: 10px;
-    /*color: black;
-    border: 4px dotted black;*/
-    /*background: rgba(247, 57, 231, 0.5);
-    box-shadow: 0 0 10px rgb(100, 32, 100);*/
-    background: rgba(247, 133, 57, 0.5);
-    box-shadow: 0 0 10px rgb(100, 57, 32);
+    background: var(--color-topfreds8);
+    /*CHANGING*/
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.8);
     background-size: cover;
-    color:white;
+    color: white;
     border: 4px dotted white;
     text-shadow: none;
 
     img {
-        width: 70px;
+        width: 60px;
         border: 1px solid white;
         border-radius: 15px;
         margin: 8px;
@@ -1041,16 +1160,14 @@ a {
 
 .RecentBlogs {
     flex: 1 1 300px;
-    border: 1px solid white;
     border-radius: 15px;
     padding: 10px;
     height: auto;
     color: black;
     text-shadow: none;
-    background: url(/assets/Pink\ sky_.jpg);
-    /*border: 4px dotted black;*/
+    background: var(--color-blogs11);
     box-shadow: 0 0 5px black;
-    border: 4px dotted white;
+    border: 4px dotted black;
 
     .blog {
         width: 100%;
@@ -1070,15 +1187,13 @@ a {
 }
 
 .About {
-    flex: 0 0 400px;
+    flex: 0 0 350px;
     height: 150px;
     width: auto;
     border-radius: 15px;
-    background: rgba(255, 103, 48, 0.37);
+    background: var(--color-abtMeBG9);
+    /*CHANGING*/
     padding: 10px;
-    /*background: rgba(253, 123, 210, 0.5);*/
-    /*color: black;*/
-    /*border: 4px double black;*/
     text-shadow: none;
     color: white;
     border: 4px double white;

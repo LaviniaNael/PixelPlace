@@ -44,8 +44,8 @@
                         </label>
                         <div class="settings-menu">
                             <a href="#">Account Settings</a>
-                            <a href="#">Privacy</a>
-                            <a href="#">Log Out</a>
+                            <a href="https://youtu.be/QwLvrnlfdNo?si=TE4k6SRbwWc7LzLr">Privacy</a>
+                            <a href="/index.html" class="no-prevent">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -54,27 +54,45 @@
                 <aside class="sidebar_left">
                     <a href="home.html">News Feed</a>
                     <a href="profile.html">Profile</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Themes & Customisation</a>
-                    <a href="#">Your Pets</a>
+                    <a href="https://thehowler.org/wp-content/uploads/2018/01/roll-safe-meme-1.jpg">Blog</a>
+                    <a href="https://gifsec.com/wp-content/uploads/2022/09/crying-gif-50.gif">Themes & Customisation</a>
+                    <a href="https://media.istockphoto.com/id/1325727757/photo/serious-funny-white-fold-cat-with-painted-black-eyebrows.jpg?s=612x612&w=0&k=20&c=_lxDK3xrun-VAg1hlV9qoHv1TmI2BhBwSNjlmvHvs2U=">Your Pets</a>
                 </aside>
                 <main class="ProfileDetails">
                     <div class="details">
                         <img class="PP" title="Profile Picture" alt="prof pic"
-                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI5IiwiU29ja3MiOiIxIiwiUGFudHMiOiIxNCIsIkdsb3ZlcyI6IjIiLCJUb3AiOiIyIiwiRXllcyI6IjEwIiwiTW91dGgiOiIyMCIsIkhhaXJUb3AiOiI1IiwiaGFpclRvbmUiOiJjOTcyYWMiLCJoYWlyVG9uZTIiOiIzZjFhODYiLCJleWVzVG9uZSI6ImZhM2RlNiIsImV5ZXNUb25lMiI6IjU5NTkwOSIsInBhbnRzVG9uZSI6ImQwYTNkMSIsInBhbnRzVG9uZTIiOiJmYzZhZGEiLCJ0b3BUb25lIjoiYWRhYzE2IiwidG9wVG9uZTIiOiJhNzAyODMiLCJzaG9lc1RvbmUiOiIxOTE2MmIiLCJzaG9lc1RvbmUyIjoiYzliOWFiIiwic29ja3NUb25lIjoiYTlmNjY2IiwiZ2xvdmVzVG9uZSI6IjQ5NzBiMiIsImdsb3Zlc1RvbmUyIjoiNGFmN2NkIn0=/1/show.png">
+                            src="http://www.avatarsinpixels.com/chibi/eyJCb2R5IjoiMiIsIlNvY2tzIjoiMSIsIlNob2VzIjoiMSIsIlBhbnRzIjoiMTciLCJUb3AiOiIzIiwiRXllYnJvd3MiOiIxIiwiRXllcyI6IjgiLCJNb3V0aCI6IjIxIiwiSGFpclRvcCI6IjMiLCJoYWlyVG9uZSI6ImZmODAyYyIsImhhaXJUb25lMiI6ImJmYjM5ZSIsImV5ZXNUb25lIjoiNWY0M2Y3IiwiZXllc1RvbmUyIjoiNWFjMDEyIiwicGFudHNUb25lIjoiNzQyYTJhIiwicGFudHNUb25lMiI6ImZmYzhmNyIsInRvcFRvbmUiOiJmZjdhMDUiLCJ0b3BUb25lMiI6IjdlZWRiYyIsInNob2VzVG9uZSI6IjhhOTM4NSIsInNob2VzVG9uZTIiOiIwZDhjMDMiLCJzb2Nrc1RvbmUiOiJlNTc0OWUiLCJnbG92ZXNUb25lIjoiZWY0OGUyIiwiZ2xvdmVzVG9uZTIiOiJkYjk0ZGQifQ==/1/show.png">
                         <h1>PixelPup</h1>
                         <div class="mood">
                             <h1>Mood: <span>Energetic</span>✨</h1>
                         </div>
                         <div class="ProfileBar">
-                            <a href="#">Photos</a>
-                            <a href="#">Videos</a>
-                            <a href="#">Blogs</a>
-                            <a href="#">Customize</a>
+                            <button class="bar">Photos</button>
+                            <button class="bar">Videos</button>
+                            <button class="bar">Blogs</button>
+                            <div class="customize-wrapper">
+                                <button id="customize-btn"
+                                    type="button">Customize</button>
+                                <div id="color-options"
+                                    style="display: none; gap: 8px;">
+                                    <button class="color-swatch"
+                                        data-color="orange"
+                                        style="background:#ff8c00;"></button>
+                                    <button class="color-swatch"
+                                        data-color="pink"
+                                        style="background:#ff66b2;"></button>
+                                    <button class="color-swatch"
+                                        data-color="green"
+                                        style="background:#28a745;"></button>
+                                    <button class="color-swatch"
+                                        data-color="grey"
+                                        style="background:#424242;"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!--WE THEN SPLIT THE MAIN TO 2 COLUMNS OR 3 -->
+                    <!--THE MAIN profile -->
                     <div class="musc_plyr">
                         <h3>Playlist</h3>
                         <div class="music">
@@ -112,10 +130,29 @@
                     <div class="pets"> <!--ADD MORE PETS-->
                         <h3>your pets:</h3>
                         <img class="PetImg"
-                            src="https://i.postimg.cc/j2YwQcMx/avatar.png">
+                            src="https://i.postimg.cc/15bgq7b5/pony.png">
+                        <img class="PetImg"
+                            src="https://i.postimg.cc/y89DXXzh/pony2.png">
                     </div>
                     <div class="gif">
-                        <img src="/assets/orangeheart.gif" alt="orange heart">
+                        <img id="heart-img" src="https://i.postimg.cc/d0YLWkqb/greyheart.gif" alt="grey heart">
+                        <div id="color-button">
+                            <div id="color-options2"
+                                style="gap: 8px;">
+                                <button class="color-swatch2"
+                                    data-color="orange"
+                                    style="background:#ff8c00;"></button>
+                                <button class="color-swatch2"
+                                    data-color="pink"
+                                    style="background:#ff66b2;"></button>
+                                <button class="color-swatch2"
+                                    data-color="green"
+                                    style="background:#28a745;"></button>
+                                <button class="color-swatch2"
+                                    data-color="grey"
+                                    style="background:#424242;"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="RecentBlogs">
                         <h2>Recent Blog Entries:</h2>
@@ -129,12 +166,18 @@
                                 Nihil voluptate provident ea.</p>
                         </div>
                     </div>
-                    
                     <div class="TopFriends">
                         <h2>your top friends:</h2>
-                        <!--img placeholder & add 5 more -->
                         <img class="friend"
-                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMiIsIkJvZHkiOiIxIiwiU29ja3MiOiIyIiwiU2hvZXMiOiIyIiwiUGFudHMiOiIxNiIsIkdsb3ZlcyI6IjIiLCJUb3AiOiIzIiwiRXllYnJvd3MiOiIxIiwiRXllcyI6IjgiLCJNb3V0aCI6IjE4IiwiSGFpclRvcCI6IjUiLCJoYWlyVG9uZSI6IjA4MDJjMyIsImhhaXJUb25lMiI6IjFlNTg1MCIsImV5ZXNUb25lIjoiYjQzZjA4IiwiZXllc1RvbmUyIjoiZDA3ODlkIiwicGFudHNUb25lIjoiYjg4MGU0IiwicGFudHNUb25lMiI6IjI3MTg2OCIsInRvcFRvbmUiOiJhY2E5NzMiLCJ0b3BUb25lMiI6IjlmNzY0MSIsInNob2VzVG9uZSI6IjBlNjE0NiIsInNob2VzVG9uZTIiOiI5MWMyMDYiLCJzb2Nrc1RvbmUiOiJlYmRmMWEiLCJnbG92ZXNUb25lIjoiNzY1N2ZlIiwiZ2xvdmVzVG9uZTIiOiIzNTE3NDcifQ==/1/show.png">
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMCIsIlNob2VzIjoiMyIsIlBhbnRzIjoiNyIsIlRvcCI6IjE0IiwiRXllcyI6IjExIiwiTW91dGgiOiIyMiIsIkhhaXJUb3AiOiIzIiwiaGFpclRvbmUiOiJlMjEwN2EiLCJoYWlyVG9uZTIiOiJjNmYwYjYiLCJleWVzVG9uZSI6IjI2ZGNkYiIsImV5ZXNUb25lMiI6IjAzZDMyNyIsInBhbnRzVG9uZSI6IjQzYWU5NCIsInBhbnRzVG9uZTIiOiIzNDc1YmYiLCJ0b3BUb25lIjoiZGM3YjRhIiwidG9wVG9uZTIiOiI5ZTM4MDciLCJzaG9lc1RvbmUiOiIzOWMyOTYiLCJzaG9lc1RvbmUyIjoiMDgwNTMyIiwic29ja3NUb25lIjoiOWFhNjBjIiwiZ2xvdmVzVG9uZSI6ImM1NDM0ZSIsImdsb3Zlc1RvbmUyIjoiZjZmYzgwIn0=/1/show.png">
+                        <img class="friend"
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIyIiwiQm9keSI6IjIiLCJTb2NrcyI6IjQiLCJTaG9lcyI6IjMiLCJQYW50cyI6IjUiLCJHbG92ZXMiOiIyIiwiVG9wIjoiMiIsIkV5ZWJyb3dzIjoiMSIsIkV5ZXMiOiI5IiwiTW91dGgiOiIyMSIsIkhhaXJUb3AiOiI0IiwiaGFpclRvbmUiOiJiOWE1OTUiLCJoYWlyVG9uZTIiOiI3ZTJmYzYiLCJleWVzVG9uZSI6IjhhMjc4OSIsImV5ZXNUb25lMiI6IjMzNmJkNSIsInBhbnRzVG9uZSI6IjIyZjc1OCIsInBhbnRzVG9uZTIiOiIzNzMzNDgiLCJ0b3BUb25lIjoiODdiMjYwIiwidG9wVG9uZTIiOiI1NjBiZmQiLCJzaG9lc1RvbmUiOiJmODJiMTEiLCJzaG9lc1RvbmUyIjoiMzZlY2YwIiwic29ja3NUb25lIjoiNGI3ZjE3IiwiZ2xvdmVzVG9uZSI6IjdiNGNjOCIsImdsb3Zlc1RvbmUyIjoiYWNmOTkxIn0=/1/show.png">
+                        <img class="friend"
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMSIsIkJvZHkiOiIzIiwiU29ja3MiOiIzIiwiVG9wIjoiNiIsIkV5ZXMiOiIzIiwiTW91dGgiOiIxIiwiSGFpclRvcCI6IjgiLCJoYWlyVG9uZSI6IjQyMmMwNiIsImhhaXJUb25lMiI6ImM3ZWQ1ZCIsImV5ZXNUb25lIjoiOTZmMTZlIiwiZXllc1RvbmUyIjoiOGFiODA0IiwicGFudHNUb25lIjoiMDllOWI0IiwicGFudHNUb25lMiI6IjUwMzExMSIsInRvcFRvbmUiOiIzNGQ5ODIiLCJ0b3BUb25lMiI6IjQxZWVmNyIsInNob2VzVG9uZSI6IjQwYTZhZSIsInNob2VzVG9uZTIiOiI2MTRkMjkiLCJzb2Nrc1RvbmUiOiIxYzgzNjQiLCJnbG92ZXNUb25lIjoiMTA0ZTI2IiwiZ2xvdmVzVG9uZTIiOiJiZmI0M2QifQ==/1/show.png">
+                        <img class="friend"
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiI0IiwiQm9keSI6IjIiLCJTb2NrcyI6IjMiLCJTaG9lcyI6IjMiLCJQYW50cyI6IjkiLCJHbG92ZXMiOiIyIiwiVG9wIjoiMTkiLCJFeWVzIjoiNyIsIk1vdXRoIjoiMjEiLCJIYWlyVG9wIjoiMSIsImhhaXJUb25lIjoiNjkzYjkxIiwiaGFpclRvbmUyIjoiNWY0OTI5IiwiZXllc1RvbmUiOiI5OGQyYzgiLCJleWVzVG9uZTIiOiI0ODg1ZjUiLCJwYW50c1RvbmUiOiIyNDAxZmYiLCJwYW50c1RvbmUyIjoiMjBkNzYwIiwidG9wVG9uZSI6IjA0ZDI5YyIsInRvcFRvbmUyIjoiMWU0MDU5Iiwic2hvZXNUb25lIjoiMmExOGRjIiwic2hvZXNUb25lMiI6ImU4MTI4ZSIsInNvY2tzVG9uZSI6IjRjOTk2YyIsImdsb3Zlc1RvbmUiOiI3MWI5YmQiLCJnbG92ZXNUb25lMiI6ImUyNzQ5NCJ9/1/show.png">
+                        <img class="friend"
+                            src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOiIxMCIsIkJvZHkiOiIzIiwiU2hvZXMiOiIyIiwiUGFudHMiOiIxIiwiR2xvdmVzIjoiMSIsIlRvcCI6IjIwIiwiRXllcyI6IjMiLCJNb3V0aCI6IjE4IiwiSGFpclRvcCI6IjUiLCJoYWlyVG9uZSI6IjU4MDkxNiIsImhhaXJUb25lMiI6IjY4OWY2ZCIsImV5ZXNUb25lIjoiOTFlMTBkIiwiZXllc1RvbmUyIjoiMmU1ODQxIiwicGFudHNUb25lIjoiZTYwZDliIiwicGFudHNUb25lMiI6ImU0NWMxOCIsInRvcFRvbmUiOiIyYmE2MzkiLCJ0b3BUb25lMiI6IjRjYzY4YyIsInNob2VzVG9uZSI6IjkwYTczYiIsInNob2VzVG9uZTIiOiJhMmQ2MTkiLCJzb2Nrc1RvbmUiOiI1NTdmNjAiLCJnbG92ZXNUb25lIjoiZGM0YTMyIiwiZ2xvdmVzVG9uZTIiOiJmZTA4YmIifQ==/1/show.png">
                     </div>
                 </main>
             </div>
